@@ -1,5 +1,6 @@
 package com.company;
 
+import java.util.Collections;
 import java.util.List;
 import java.util.ArrayList;
 
@@ -67,8 +68,7 @@ public class Deck {
         /* *** TO BE IMPLEMENTED IN ACTIVITY 4 *** */
         for(int k = 51; k >= 1; k--) {
             int r = (int) Math.random() * k;
-
-
+            Collections.swap(cards,r, k);
         }
     }
 

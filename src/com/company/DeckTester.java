@@ -7,9 +7,13 @@ public class DeckTester {
      *	@param args is not used.
      */
     public static void main(String[] args) {
-        String[] ranks = {"jack", "queen", "king"};
-        String[] suits = {"blue", "red"};
-        int[] pointValues = {11, 12, 13};
+        String [] ranks = new String [] { "2", "3", "4", "5", "6", "7", "8", "9", "10", "Jack", "Queen", "King", "Ace", "2", "3", "4", "5", "6", "7", "8", "9", "10", "Jack", "Queen", "King", "Ace", "2", "3", "4", "5", "6", "7", "8", "9", "10", "Jack", "Queen", "King", "Ace", "2", "3", "4", "5", "6", "7", "8", "9", "10", "Jack", "Queen", "King", "Ace"};
+        String [] suits = new String [] { "Spades", "Spades","Spades","Spades","Spades","Spades","Spades","Spades","Spades","Spades","Spades","Spades","Spades","Hearts", "Hearts","Hearts","Hearts","Hearts","Hearts","Hearts","Hearts","Hearts","Hearts","Hearts","Hearts","Hearts", "Clubs","Clubs","Clubs","Clubs","Clubs","Clubs","Clubs","Clubs","Clubs","Clubs","Clubs","Clubs","Clubs", "Diamonds", "Diamonds","Diamonds","Diamonds","Diamonds","Diamonds","Diamonds","Diamonds","Diamonds","Diamonds","Diamonds","Diamonds","Diamonds"};
+        int [] pointValues = new int [] { 2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 10, 10, 11, 2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 10, 10, 11, 2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 10, 10, 11, 2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 10, 10, 11};
+       /* System.out.println(ranks.length);
+        System.out.println(suits.length);
+        System.out.println(pointValues.length);*/
+
         Deck d = new Deck(ranks, suits, pointValues);
 
         System.out.println("**** Original Deck Methods ****");
@@ -50,6 +54,12 @@ public class DeckTester {
         System.out.println();
         System.out.println();
 
+        d.shuffle();
+        System.out.println(d.toString());
+
+
         /* *** TO BE COMPLETED IN ACTIVITY 4 *** */
+
+
     }
 }
